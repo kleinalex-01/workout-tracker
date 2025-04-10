@@ -1,0 +1,28 @@
+/* nav-bar */
+.nav-container {
+    width: 80%;
+    margin: 0 auto;
+    height: 5rem;
+    background-color: var(--lightGreen);
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: ;
+}
+.login-icon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+.fa-solid {
+    font-size: 3rem;
+    position: absolute;
+    top: 1rem;
+    color: var(--darkGrey);
+    border-radius: 5rem;
+    transition: all 400ms ease-in-out;
+}
+.fa-solid:hover {
+    color: red;
+}

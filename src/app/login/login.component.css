@@ -1,0 +1,18 @@
+button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.2rem;
+}
+.fa-solid {
+    margin-left: 0.3rem;
+    font-size: 2rem;
+    cursor: pointer;
+    transition: all 400ms ease-in-out;
+    border-radius: 4rem;
+}
+.fa-solid:hover {
+    background-color: red;
+}
+.logged-in {
+    background-color: red;
+}

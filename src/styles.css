@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    --textColorLight: #FFFFFF;
+    --textColorDark: #000000;
+    --lightGreen: #A3CFCD;
+    --lightBlue: #82A0AA;
+    --lightGrey: #677381;
+    --mediumGrey: #4B4A54;
+    --darkGrey: #2A272A;
+}
+body {
+    background-color: #0b0a0b;
+}
