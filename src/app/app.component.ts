@@ -1,22 +1,20 @@
 import { Component, inject } from '@angular/core';
-import { AsyncPipe } from '@angular/common';
 import { Observable } from 'rxjs';
+import { CommonModule } from '@angular/common';
 import { Firestore, collection, collectionData } from '@angular/fire/firestore';
-import { RouterOutlet } from '@angular/router';
+import { RouterOutlet, RouterLink, RouterLinkActive } from '@angular/router';
 import { LoginComponent } from './login/login.component';
+import { appConfig } from './app.config';
+
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet, AsyncPipe, LoginComponent],
+  imports: [RouterOutlet, LoginComponent, CommonModule, RouterLink, RouterLinkActive],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  firestore: Firestore = inject(Firestore);
-  items$: Observable<any[]> = collectionData(collection(this.firestore, 'items')) as Observable<any[]>;
+  private firestore: Firestore = inject(Firestore);
 
-  constructor() {
-    const aCollection = collection(this.firestore, 'items')
-    this.items$ = collectionData(aCollection);
-  }
+
 }

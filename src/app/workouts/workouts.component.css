@@ -1,0 +1,30 @@
+.routine-header {
+    background-color: var(--lightGreen);
+    width: 30%;
+    height: 2rem;
+    margin: 1rem 0 2rem 10%;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+}
+.routines {
+    background-color: var(--lightGreen);
+    width: 80%;
+    height: 10rem;
+    margin: 0 auto;    
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+#divider {
+    color: var(--lightGreen);
+    font-weight: 600;
+    font-size: 5rem;
+    position: absolute;
+    top: 15%;
+    left: 24%;
+    z-index: -1;
+}

@@ -1,11 +1,20 @@
 <div class="nav-container">
-  <p>Routines</p>
-  <p>Excersises</p>
+  <div class="link-container">
+    <a routerLink="/workouts" routerLinkActive="activePage">Routines</a>
+  </div>
+  <div class="link-container" routerLinkActive="activePage">
+    <a routerLink="/excersises" routerLinkActive="activePage">Excersises</a>
+  </div>
+
   <i class="fa-solid fa-dumbbell"></i>
-  <p>Socials</p>
-  <p>Profile</p>
+
+  <div class="link-container">
+    <a routerLink="/social" routerLinkActive="activePage">Socials</a>
+  </div>
+  <div class="link-container">
+    <a routerLink="/profile" routerLinkActive="activePage">Profile</a>
+  </div>
 </div>
-
-
 <app-login class="login-icon"></app-login>
+
 <router-outlet></router-outlet>
